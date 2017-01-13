@@ -24,4 +24,4 @@
     (and (< number 20) (> number 0))
       (str (nth small_numbers (dec number)))
     :else
-      ""))
+      "Too big"))
