@@ -1,3 +1,4 @@
+// 23 mins
 public class year_birth_count {
   public static void main(String[] args) {
 
