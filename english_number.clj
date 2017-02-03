@@ -20,8 +20,7 @@
     (and (< number 1000) (>= number 100))
       (str (english (quot number 100)) " hundred " (english (rem number 100)))
     (and (< number 100) (>= number 20))
-      (str (nth large_numbers (- (quot number 10) 2)) " " (english (rem number 10)) )
+	  (str (nth large_numbers (- (quot number 10) 2)) 
+		  (if-not (zero? (rem number 10)) (str " " (english (rem number 10)))))
     (and (< number 20) (> number 0))
-      (str (nth small_numbers (dec number)))
-    :else
-      "Too big"))
+      (str (nth small_numbers (dec number)))))
